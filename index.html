@@ -1,24 +1,193 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-    <title>Mi Web</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Dashboard de Tutoriales</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    background:#f4f6f9;
+}
+
+.navbar{
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+    transition:all .25s ease;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
+
+.icono{
+    font-size:50px;
+}
+
+footer{
+    color:#6c757d;
+    font-size:.9rem;
+}
+</style>
+
 </head>
 
-<body style="background-color:lightyellow;">
+<body>
 
-<h1>Bienvenido</h1>
+<nav class="navbar navbar-dark bg-primary">
+    <div class="container">
+        <span class="navbar-brand mb-0 h1">
+            📚 Mi Centro de Tutoriales
+        </span>
+    </div>
+</nav>
 
-<p>Esta página está alojada gratis en GitHub.</p>
+<div class="container py-5">
 
-<img src="foto.jpg" width="250">
+    <div class="text-center mb-5">
+        <h1>Dashboard</h1>
+        <p class="text-muted">
+            Selecciona el tutorial que deseas consultar.
+        </p>
+    </div>
 
-<br><br>
+    <div class="row g-4">
 
-<a href="https://github.com">
-    <button>Mi GitHub</button>
-</a>
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow h-100">
+                <div class="card-body text-center">
+
+                    <div class="icono mb-3">🌐</div>
+
+                    <h4>HTML</h4>
+
+                    <p class="text-muted">
+                        Aprende la estructura básica de una página web.
+                    </p>
+
+                    <a href="html.html" class="btn btn-primary">
+                        Abrir
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow h-100">
+                <div class="card-body text-center">
+
+                    <div class="icono mb-3">🎨</div>
+
+                    <h4>CSS</h4>
+
+                    <p class="text-muted">
+                        Personaliza el aspecto de tu página.
+                    </p>
+
+                    <a href="css.html" class="btn btn-success">
+                        Abrir
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow h-100">
+                <div class="card-body text-center">
+
+                    <div class="icono mb-3">⚡</div>
+
+                    <h4>JavaScript</h4>
+
+                    <p class="text-muted">
+                        Añade interactividad a tus proyectos.
+                    </p>
+
+                    <a href="javascript.html" class="btn btn-warning">
+                        Abrir
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow h-100">
+                <div class="card-body text-center">
+
+                    <div class="icono mb-3">🐙</div>
+
+                    <h4>Git y GitHub</h4>
+
+                    <p class="text-muted">
+                        Control de versiones y publicación.
+                    </p>
+
+                    <a href="github.html" class="btn btn-dark">
+                        Abrir
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow h-100">
+                <div class="card-body text-center">
+
+                    <div class="icono mb-3">🚀</div>
+
+                    <h4>Deploy</h4>
+
+                    <p class="text-muted">
+                        Publica tu proyecto en Internet.
+                    </p>
+
+                    <a href="deploy.html" class="btn btn-danger">
+                        Abrir
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow h-100">
+                <div class="card-body text-center">
+
+                    <div class="icono mb-3">📋</div>
+
+                    <h4>Checklist</h4>
+
+                    <p class="text-muted">
+                        Marca los tutoriales completados.
+                    </p>
+
+                    <a href="checklist.html" class="btn btn-info">
+                        Abrir
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="text-center py-4">
+    Dashboard de Tutoriales © 2026
+</footer>
 
 </body>
-
 </html>
