@@ -36,6 +36,39 @@ footer{
     color:#6c757d;
     font-size:.9rem;
 }
+    body,
+.card,
+.navbar{
+    transition: .3s;
+}
+
+/* Tema oscuro */
+
+.dark-mode{
+    background:#121212 !important;
+    color:white;
+}
+
+.dark-mode .navbar{
+    background:#1f1f1f !important;
+}
+
+.dark-mode .card{
+    background:#202124;
+    color:white;
+}
+
+.dark-mode .text-muted{
+    color:#bdbdbd !important;
+}
+
+.dark-mode footer{
+    color:#bdbdbd;
+}
+
+.dark-mode .btn-outline-light{
+    border-color:#888;
+}
 </style>
 
 </head>
@@ -191,6 +224,36 @@ footer{
 <footer class="text-center py-4">
     Dashboard de Tutoriales © 2026
 </footer>
+<script>
 
+const boton = document.getElementById("modoOscuro");
+
+// Cargar preferencia guardada
+if(localStorage.getItem("tema") === "oscuro"){
+
+    document.body.classList.add("dark-mode");
+    boton.innerHTML = "☀️ Modo claro";
+
+}
+
+boton.addEventListener("click",()=>{
+
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+
+        localStorage.setItem("tema","oscuro");
+        boton.innerHTML="☀️ Modo claro";
+
+    }else{
+
+        localStorage.setItem("tema","claro");
+        boton.innerHTML="🌙 Modo oscuro";
+
+    }
+
+});
+
+</script>
 </body>
 </html>
